@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b1cc7afb7ac2e947bfa2472f3137759, type: 3}
-  m_Name: Move 1
+  m_Name: Headbutt
   m_EditorClassIdentifier: 
-  names: 
-  description: 
+  names: Headbutt
+  description: The user sticks out its head and attacks by charging straight into
+    the target. This may also make the target flinch.
   type: 0
-  power: 0
-  accuracy: 0
-  pp: 0
+  power: 70
+  accuracy: 100
+  pp: 15

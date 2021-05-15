@@ -47,11 +47,11 @@ TagManager:
   - name: colliable
     uniqueID: 4080536665
     locked: 0
-  - name: grass
-    uniqueID: 127917011
-    locked: 0
   - name: bedroom
     uniqueID: 2226869311
+    locked: 0
+  - name: grass
+    uniqueID: 127917011
     locked: 0
   - name: Player
     uniqueID: 4077515403

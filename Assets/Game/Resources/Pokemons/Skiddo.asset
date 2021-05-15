@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
   m_Name: Skiddo
   m_EditorClassIdentifier: 
-  names: 
+  names: Skiddo
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
