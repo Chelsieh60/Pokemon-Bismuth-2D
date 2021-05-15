@@ -18,14 +18,38 @@ MonoBehaviour:
   back: {fileID: 21300000, guid: 9403475a5e5756b409b7876613a3910d, type: 3}
   firstType: 0
   secondType: 0
-  maxHealth: 100
-  attack: 12
-  defense: 120
-  spAttack: 15
-  spDefense: 123
-  speed: 12
+  maxHealth: 75
+  attack: 100
+  defense: 95
+  spAttack: 40
+  spDefense: 70
+  speed: 110
   learnables:
-  - moveBase: {fileID: 11400000, guid: 7e51d46b85bfdd2499b17c5d68c0c312, type: 2}
+  - moveBase: {fileID: 11400000, guid: b39f5ad88a2db1c448d146dfc067646f, type: 2}
     level: 1
-  - moveBase: {fileID: 11400000, guid: 7a5caaa8770b3334eb5bb24217784d4d, type: 2}
+  - moveBase: {fileID: 11400000, guid: dc69cbb01dd51f047ade35c23ca6fe0d, type: 2}
     level: 1
+  - moveBase: {fileID: 11400000, guid: 7cc2f8c9f93048444b1d516482d4738c, type: 2}
+    level: 5
+  - moveBase: {fileID: 11400000, guid: ba64ca5a5698e28479c8ee6d1f4a65a2, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: a0cb66e166b87c743bd7cbbc3df6763b, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: aa18e3683eeff4e4eaa8d8ece556cdd2, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 6d3eab5d6080e62418287b854e75c876, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 56b26970d3fc3f743b29d927315a7269, type: 2}
+    level: 30
+  - moveBase: {fileID: 11400000, guid: 32291fd2628f29c42b03137e2c80bf89, type: 2}
+    level: 35
+  - moveBase: {fileID: 11400000, guid: f2dcfe07a0c69d24195c7acd21ffeaf7, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 9c88732ca2ff7e847b5e4c4e78238ace, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 4295211375b5a0c47a37ab49dcb3636f, type: 2}
+    level: 50
+  - moveBase: {fileID: 11400000, guid: 880b53990eeeb224bbed059458f4259f, type: 2}
+    level: 55
+  - moveBase: {fileID: 11400000, guid: a78ef79953b73c6419500e4477522cf4, type: 2}
+    level: 60

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Headbutt
   m_EditorClassIdentifier: 
   names: Headbutt
-  description: The user sticks out its head and attacks by charging straight into
-    the target. This may also make the target flinch.
+  description: 
   type: 0
   power: 70
   accuracy: 100
