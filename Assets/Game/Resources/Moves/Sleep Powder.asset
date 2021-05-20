@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1cc7afb7ac2e947bfa2472f3137759, type: 3}
   m_Name: Sleep Powder
   m_EditorClassIdentifier: 
-  names: 
+  names: Sleep Powder
   description: 
-  type: 0
+  type: 3
   power: 0
-  accuracy: 0
-  pp: 0
+  accuracy: 75
+  pp: 15

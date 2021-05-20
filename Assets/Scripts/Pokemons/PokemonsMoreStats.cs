@@ -2,18 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class PokemonsMoreStats
 {
-   public Pokemons _base { get; set; }
-   public int level { get; set; }
+    [SerializeField] Pokemons _Base;
+    [SerializeField] int Levels;
+
+   public Pokemons _base
+    {
+        get
+        {
+            return _Base;
+        }
+    }
+   public int level {
+        get {
+            return Levels;
+        } 
+    }
     public int Hp { get; set; }
 
     public List<MoveMore> Moves { get; set; }
 
-    public PokemonsMoreStats(Pokemons pbase, int plevel)
+    public void Init()
     {
-        _base = pbase;
-        level = plevel;
+        //_base = pbase;
+        //level = plevel;
         Hp = MaxHealth;
 
         Moves = new List<MoveMore>();
@@ -29,6 +43,7 @@ public class PokemonsMoreStats
             }
         }
     }
+    
     public int Attack
     {
         get { return Mathf.FloorToInt((_base.Attack * level) / 100f) + 5;  }
@@ -59,24 +74,48 @@ public class PokemonsMoreStats
         get { return Mathf.FloorToInt((_base.MaxHealth * level) / 100f) + 10; }
 
     }
-    public bool TakDmg(MoveMore move, PokemonsMoreStats attacker)
+    public DamageDets TakDmg(MoveMore move, PokemonsMoreStats attacker)
     {
-        float modifiers = Random.Range(.85f, 1f);
+        float crit = 1;
+        if (Random.value * 100 <= 6.25f)
+            crit = 2;
+
+        float type = TypeChart.TypeEffectivness(move.Base.Type, this._base.FirstType) * TypeChart.TypeEffectivness(move.Base.Type, this._base.SecondType);
+
+        float modifiers = Random.Range(.85f, 1f) * type * crit;
         float a = (2 * attacker.level + 10) / 250;
         float d = a * move.Base.Power * ((float)attacker.Attack / Defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        Hp -= damage;
+       var damageDets = new DamageDets()
+        {
+            TypeEffect = type,
+            Crit = crit,
+            Fainted = false
+
+        };
+
+    Hp -= damage;
         if(Hp <= 0)
         {
             Hp = 0;
-            return true;
+            damageDets.Fainted = true;
         }
-        return false;
+        return damageDets;
     }
+
+
+
     public MoveMore GetRandMove()
     {
         int r = Random.Range(1, Moves.Count);
         return Moves[r];
     }
+    public class DamageDets
+    {
+        public bool Fainted { get; set; }
+        public float Crit { get; set; }
+        public float TypeEffect { get; set; }
+    }
+
 }

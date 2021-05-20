@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class BattlePoke : MonoBehaviour
 {
-    [SerializeField] Pokemons _base;
-    [SerializeField] int level;
+    
     [SerializeField] bool playerPoke;
 
     public PokemonsMoreStats pokemon { get; set; }
 
-    public void SetUp()
+    public void SetUp(Pokemons pokemons)
     {
-       pokemon = new PokemonsMoreStats(_base, level);
+       pokemon = pokemon;
         if (playerPoke)
         {
             GetComponent<Image>().sprite = pokemon._base.Back;

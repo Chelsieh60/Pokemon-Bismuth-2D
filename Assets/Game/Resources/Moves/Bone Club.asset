@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1cc7afb7ac2e947bfa2472f3137759, type: 3}
   m_Name: Bone Club
   m_EditorClassIdentifier: 
-  names: 
+  names: Bone Club
   description: 
-  type: 0
-  power: 0
-  accuracy: 0
-  pp: 0
+  type: 8
+  power: 65
+  accuracy: 85
+  pp: 20

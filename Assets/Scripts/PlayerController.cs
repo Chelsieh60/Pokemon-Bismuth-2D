@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
             //if random number generated is less than 10, they get a pokemon encounter
             if (UnityEngine.Random.Range(1, 101) <= 10)
             {
+                animator.SetBool("isMoving", false);
                 OnEncounter();
                 Debug.Log("Encountered a wild pokemon!");
             }

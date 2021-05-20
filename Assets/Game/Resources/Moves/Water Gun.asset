@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   names: Water Gun
   description: 
-  type: 2
+  type: 3
   power: 40
   accuracy: 100
   pp: 25

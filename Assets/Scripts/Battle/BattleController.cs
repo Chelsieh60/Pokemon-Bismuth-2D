@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PokemonsMoreStats;
 
 public enum BattleState { Start, ActionChoice, MoveChoice, EnemyMove, Busy}
 public class BattleController : MonoBehaviour
@@ -10,20 +12,23 @@ public class BattleController : MonoBehaviour
     [SerializeField] Battle playerStats;
     [SerializeField] Battle enemyStats;
     [SerializeField] BattleText battlesText;
+
+    public event Action<bool> OnBattleOver;
+
     int currentACtion;
     int currentMove;
 
     BattleState state;
-    private void Start()
+    public void StartBattle()
     {
        StartCoroutine(SetUpBattle());
     }
 
     public IEnumerator SetUpBattle()
     {
-        playerPoke.SetUp();
+        //playerPoke.SetUp();
         playerStats.SetData(playerPoke.pokemon);
-        enemyPoke.SetUp();
+       // enemyPoke.SetUp();
         enemyStats.SetData(enemyPoke.pokemon);
 
         battlesText.SetMoveNames(playerPoke.pokemon.Moves);
@@ -135,6 +140,7 @@ public class BattleController : MonoBehaviour
     {
         state = BattleState.Busy;
         var move = playerPoke.pokemon.Moves[currentMove];
+        var damageDets = playerPoke.pokemon.TakDmg(move, enemyPoke.pokemon);
 
         yield return battlesText.TypeText($"{playerPoke.pokemon._base.Names} used {move.Base.Name}!");
         
@@ -142,11 +148,14 @@ public class BattleController : MonoBehaviour
 
         yield return enemyStats.HpGauge();
 
-        bool isFainted = playerPoke.pokemon.TakDmg(move, enemyPoke.pokemon);
+        yield return ShowDamageDets(damageDets);
+        yield return new WaitForSeconds(1);
 
-        if (isFainted)
+        if (damageDets.Fainted)
         {
             yield return battlesText.TypeText($"{enemyPoke.pokemon._base.Names} fainted!");
+            yield return new WaitForSeconds(2);
+            OnBattleOver(true);
         }
         else
         {
@@ -157,6 +166,7 @@ public class BattleController : MonoBehaviour
     {
         state = BattleState.EnemyMove;
         var move = enemyPoke.pokemon.GetRandMove();
+        var damageDets = enemyPoke.pokemon.TakDmg(move, playerPoke.pokemon);
 
         yield return battlesText.TypeText($"{enemyPoke.pokemon._base.Names} used {move.Base.Name}!");
         
@@ -164,15 +174,36 @@ public class BattleController : MonoBehaviour
 
         yield return playerStats.HpGauge();
 
-        bool isFainted = enemyPoke.pokemon.TakDmg(move, playerPoke.pokemon);
+        yield return ShowDamageDets(damageDets);
+        yield return new WaitForSeconds(1);
 
-        if (isFainted)
+        if (damageDets.Fainted)
         {
             yield return battlesText.TypeText($"{playerPoke.pokemon._base.Names} fainted!");
+            yield return new WaitForSeconds(2);
+            OnBattleOver(false);
         }
         else
         {
             ActionChoice();
+        }
+    }
+    IEnumerator ShowDamageDets(DamageDets damageDets)
+    {
+        if (damageDets.Crit > 1)
+        {
+            yield return battlesText.TypeText("A critical hit!");
+            Debug.Log("Critical");
+        }
+        if (damageDets.TypeEffect < 1)
+        {
+            yield return battlesText.TypeText("It's super effective!");
+            Debug.Log("effective");
+        }
+        else if (damageDets.TypeEffect > 1)
+        {
+            yield return battlesText.TypeText("It's not very effective!");
+            Debug.Log("not effective");
         }
     }
 }
