@@ -19,16 +19,21 @@ public class BattleController : MonoBehaviour
     int currentMove;
 
     BattleState state;
-    public void StartBattle()
+
+    Party playerParty;
+    PokemonsMoreStats wildPokes;
+    public void StartBattle(Party playerParty, PokemonsMoreStats wildPokes)
     {
+        this.playerParty = playerParty;
+        this.wildPokes = wildPokes;
        StartCoroutine(SetUpBattle());
     }
 
     public IEnumerator SetUpBattle()
     {
-        //playerPoke.SetUp();
+        playerPoke.SetUp(playerParty);
         playerStats.SetData(playerPoke.pokemon);
-       // enemyPoke.SetUp();
+        enemyPoke.SetUp(wildPokes);
         enemyStats.SetData(enemyPoke.pokemon);
 
         battlesText.SetMoveNames(playerPoke.pokemon.Moves);
