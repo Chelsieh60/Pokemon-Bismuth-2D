@@ -10,7 +10,7 @@ public class BattlePoke : MonoBehaviour
 
     public PokemonsMoreStats pokemon { get; set; }
 
-    public void SetUp(Pokemons pokemons)
+    public void SetUp(PokemonsMoreStats pokemons)
     {
        pokemon = pokemon;
         if (playerPoke)

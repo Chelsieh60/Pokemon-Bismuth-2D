@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class Party : MonoBehaviour
 {
-   [SerializeField] List<PokemonsMoreStats> pokemons;
+   [SerializeField] List<PokemonsMoreStats> Pokemons;
     private void Start()
     {
-        foreach (var pokemon in pokemons)
+        foreach (var pokemons in Pokemons)
         {
-            pokemon.Init();
+            pokemons.Init();
         }
     }
     public PokemonsMoreStats GoodPoke()
     {
-       return pokemons.Where(x => x.Hp > 0).FirstOrDefault();
+       return Pokemons.Where(x => x.Hp > 0).FirstOrDefault();
     }
 }

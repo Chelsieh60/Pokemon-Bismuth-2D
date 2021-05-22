@@ -35,7 +35,10 @@ public class GameController : MonoBehaviour
         battleController.gameObject.SetActive(true);
         mainCam.gameObject.SetActive(false);
 
-        battleController.StartBattle();
+        var playerParty = playerController.GetComponent < Party >();
+        var wildPoke = FindObjectOfType<Map>().GetComponent<Map>().GetWildPokes();
+
+        battleController.StartBattle(playerParty, wildPoke);
 
     }
     void EndBattle(bool Won)

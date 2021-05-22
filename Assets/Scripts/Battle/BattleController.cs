@@ -31,7 +31,7 @@ public class BattleController : MonoBehaviour
 
     public IEnumerator SetUpBattle()
     {
-        playerPoke.SetUp(playerParty);
+        playerPoke.SetUp(playerParty.GoodPoke());
         playerStats.SetData(playerPoke.pokemon);
         enemyPoke.SetUp(wildPokes);
         enemyStats.SetData(enemyPoke.pokemon);
