@@ -16,8 +16,8 @@ MonoBehaviour:
   description: 
   front: {fileID: 21300000, guid: cd259d9d4f8ba2749a16d1cc64d46bec, type: 3}
   back: {fileID: 21300000, guid: ed8e1d9976a1fd94d961840d8f6e7764, type: 3}
-  firstType: 1
-  secondType: 3
+  firstType: 2
+  secondType: 0
   maxHealth: 128
   attack: 44
   defense: 65

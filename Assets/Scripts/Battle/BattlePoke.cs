@@ -10,16 +10,16 @@ public class BattlePoke : MonoBehaviour
 
     public PokemonsMoreStats pokemon { get; set; }
 
-    public void SetUp(PokemonsMoreStats pokemons)
+    public void SetUp(PokemonsMoreStats pokemonsimage)
     {
-       pokemon = pokemon;
+       pokemon = pokemonsimage;
         if (playerPoke)
         {
-            GetComponent<Image>().sprite = pokemon._base.Back;
+            GetComponent<Image>().sprite = pokemonsimage._base.Back;
         }
-        else
+        else if (!playerPoke) 
         {
-            GetComponent<Image>().sprite = pokemon._base.Front;
+            GetComponent<Image>().sprite = pokemonsimage._base.Front;
         }
     }
 }

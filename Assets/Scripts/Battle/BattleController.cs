@@ -21,11 +21,11 @@ public class BattleController : MonoBehaviour
     BattleState state;
 
     Party playerParty;
-    PokemonsMoreStats wildPokes;
-    public void StartBattle(Party playerParty, PokemonsMoreStats wildPokes)
+    PokemonsMoreStats wildPoke;
+    public void StartBattle(Party playerParty, PokemonsMoreStats wildPoke)
     {
         this.playerParty = playerParty;
-        this.wildPokes = wildPokes;
+        this.wildPoke = wildPoke;
        StartCoroutine(SetUpBattle());
     }
 
@@ -33,7 +33,7 @@ public class BattleController : MonoBehaviour
     {
         playerPoke.SetUp(playerParty.GoodPoke());
         playerStats.SetData(playerPoke.pokemon);
-        enemyPoke.SetUp(wildPokes);
+        enemyPoke.SetUp(wildPoke);
         enemyStats.SetData(enemyPoke.pokemon);
 
         battlesText.SetMoveNames(playerPoke.pokemon.Moves);
@@ -186,7 +186,27 @@ public class BattleController : MonoBehaviour
         {
             yield return battlesText.TypeText($"{playerPoke.pokemon._base.Names} fainted!");
             yield return new WaitForSeconds(2);
-            OnBattleOver(false);
+            var nextPoke = playerParty.GoodPoke();
+
+            if (nextPoke != null)
+            {
+                playerPoke.SetUp(nextPoke);
+                playerStats.SetData(nextPoke);
+                
+
+                battlesText.SetMoveNames(nextPoke.Moves);
+
+                yield return StartCoroutine(battlesText.TypeText($"Go {nextPoke._base.Names}!"));
+                yield return new WaitForSeconds(1f);
+
+                ActionChoice();
+            }
+            else
+            {
+                OnBattleOver(false);
+            }
+
+           
         }
         else
         {
@@ -200,12 +220,12 @@ public class BattleController : MonoBehaviour
             yield return battlesText.TypeText("A critical hit!");
             Debug.Log("Critical");
         }
-        if (damageDets.TypeEffect < 1)
+        if (damageDets.TypeEffect > 1)
         {
             yield return battlesText.TypeText("It's super effective!");
             Debug.Log("effective");
         }
-        else if (damageDets.TypeEffect > 1)
+        else if (damageDets.TypeEffect < 1)
         {
             yield return battlesText.TypeText("It's not very effective!");
             Debug.Log("not effective");

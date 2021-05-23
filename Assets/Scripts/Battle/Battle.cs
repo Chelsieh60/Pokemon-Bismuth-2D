@@ -11,12 +11,12 @@ public class Battle : MonoBehaviour
 
     PokemonsMoreStats _pokemon;
 
-    public void SetData(PokemonsMoreStats pokemons)
+    public void SetData(PokemonsMoreStats pokemonsdata)
     {
-        _pokemon = pokemons;
-        nameText.text = pokemons._base.Names;
-        levelText.text = "Lvl " + pokemons.level;
-        hpbar.SetHp((float) pokemons.Hp / pokemons.MaxHealth);
+        _pokemon = pokemonsdata;
+        nameText.text = pokemonsdata._base.Names;
+        levelText.text = "Lvl " + pokemonsdata.level;
+        hpbar.SetHp((float) pokemonsdata.Hp / pokemonsdata.MaxHealth);
     }
     public IEnumerator HpGauge()
     {
