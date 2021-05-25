@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     //layers
     public LayerMask collidabllayer;
     public LayerMask grasslayer;
+    public LayerMask npclayer;
 
     public event Action OnEncounter;
 
@@ -59,6 +60,10 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("isMoving", isMoving);
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            interact();
+        }
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -76,12 +81,26 @@ public class PlayerController : MonoBehaviour
 
         Encounters();
     }
+    void interact()
+    {
+        var faceing = new Vector3(animator.GetFloat("vertical"), animator.GetFloat("horizontal"));
+        var npclook = transform.position + faceing;
+
+        // Debug.DrawLine(transform.position, npclook, Color.green, 0.5f);
+
+        var collide = Physics2D.OverlapCircle(npclook, 0.3f, npclayer);
+
+        if (collide != null)
+        {
+            collide.GetComponent<Interaction>()?.Interact();
+        }
+    }
 
     //checking if area is walkable
     public bool canwalk(Vector3 targetPos)
     {
       //checking the overlap of the layers at player's position and if nothing is there then you can walk
-      if (Physics2D.OverlapCircle(targetPos, 0.3f, collidabllayer) != null){
+      if (Physics2D.OverlapCircle(targetPos, 0.3f, collidabllayer | npclayer) != null){
             return false;
         }
       //else the player cannot walk
