@@ -4406,9 +4406,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pokemons:
-  - _Base: {fileID: 11400000, guid: c366e289896acec4e98e9e9dde1f3166, type: 2}
+  - _Base: {fileID: 0}
     Levels: 1
-  - _Base: {fileID: 11400000, guid: 026dd0506186575408c06a858ec6e7c8, type: 2}
+  - _Base: {fileID: 0}
     Levels: 1
 --- !u!1 &954535718
 GameObject:
@@ -5137,11 +5137,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wildpokes:
-  - _Base: {fileID: 11400000, guid: a91cefb84d4a94d4f83af2c88af460f2, type: 2}
+  - _Base: {fileID: 0}
     Levels: 1
-  - _Base: {fileID: 11400000, guid: a2f5dea21c6de2243995b49a4df9c797, type: 2}
+  - _Base: {fileID: 0}
     Levels: 1
-  - _Base: {fileID: 11400000, guid: c366e289896acec4e98e9e9dde1f3166, type: 2}
+  - _Base: {fileID: 0}
     Levels: 100
 --- !u!1 &1695811912
 GameObject:
