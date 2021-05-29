@@ -10,53 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
-  m_Name: Politoed
+  m_Name: Granbull
   m_EditorClassIdentifier: 
-  names: Politoed
+  names: Granbull
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 3
+  firstType: 18
   secondType: 0
   maxHealth: 90
-  attack: 75
+  attack: 120
   defense: 75
-  spAttack: 90
-  spDefense: 100
-  speed: 70
+  spAttack: 60
+  spDefense: 60
+  speed: 45
   learnables:
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
-  - moveBase: {fileID: 0}
-    level: 0
   - moveBase: {fileID: 0}
     level: 0
   - moveBase: {fileID: 0}

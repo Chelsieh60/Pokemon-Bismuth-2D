@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
-  m_Name: Feebas
+  m_Name: Magikarp
   m_EditorClassIdentifier: 
-  names: Feebas
+  names: Magikarp
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
   firstType: 3
   secondType: 0
   maxHealth: 20
-  attack: 15
-  defense: 20
-  spAttack: 10
-  spDefense: 55
+  attack: 10
+  defense: 55
+  spAttack: 15
+  spDefense: 20
   speed: 80
   learnables:
   - moveBase: {fileID: 0}
