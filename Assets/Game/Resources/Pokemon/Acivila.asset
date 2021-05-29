@@ -25,3 +25,4 @@ MonoBehaviour:
   spDefense: 0
   speed: 0
   learnables: []
+  abilities: []
