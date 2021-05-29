@@ -12,16 +12,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
   m_Name: Kricketot
   m_EditorClassIdentifier: 
-  names: 
+  names: Kricketot
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
+  firstType: 12
   secondType: 0
-  maxHealth: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
-  learnables: []
+  maxHealth: 37
+  attack: 25
+  defense: 41
+  spAttack: 25
+  spDefense: 41
+  speed: 25
+  learnables:
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0

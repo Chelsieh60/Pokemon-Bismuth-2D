@@ -18,10 +18,166 @@ MonoBehaviour:
   back: {fileID: 0}
   firstType: 0
   secondType: 0
-  maxHealth: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
-  learnables: []
+  maxHealth: 85
+  attack: 100
+  defense: 90
+  spAttack: 55
+  spDefense: 85
+  speed: 85
+  learnables:
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0

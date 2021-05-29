@@ -12,16 +12,118 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
   m_Name: Rattata
   m_EditorClassIdentifier: 
-  names: 
+  names: Rattata
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
+  firstType: 1
   secondType: 0
-  maxHealth: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
-  learnables: []
+  maxHealth: 30
+  attack: 56
+  defense: 35
+  spAttack: 25
+  spDefense: 35
+  speed: 72
+  learnables:
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0
