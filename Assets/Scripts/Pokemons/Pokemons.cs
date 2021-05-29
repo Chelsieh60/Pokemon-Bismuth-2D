@@ -29,6 +29,7 @@ public class Pokemons : ScriptableObject
     [SerializeField] int speed;
 
     [SerializeField] List<Learnable> learnables;
+    [SerializeField] List<Learnable> abilities;
 
     public Types SecondType
     {
@@ -79,6 +80,10 @@ public class Pokemons : ScriptableObject
     public List<Learnable> Learnables
     {
         get { return learnables; }
+    }
+    public List<Learnable> Abilites
+    {
+        get { return abilities; }
     }
 
 
