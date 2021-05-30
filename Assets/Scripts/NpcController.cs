@@ -9,7 +9,7 @@ public class NpcController : MonoBehaviour, Interaction
     public void Interact()
     { 
 
-        TextManager.instance.ShowText(textman);
+        StartCoroutine(TextManager.instance.ShowText(textman));
         Debug.Log("interacting with npc");
     }
 }

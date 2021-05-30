@@ -16,9 +16,15 @@ public class GameController : MonoBehaviour
     {
         playerController.OnEncounter += StartBattle;
         battleController.OnBattleOver += EndBattle;
+
         TextManager.instance.OnShowText += () =>
         {
             state = GameState.Dialog;
+        };
+        TextManager.instance.OnCloseText += () =>
+        {
+            if (state == GameState.Dialog)
+            state = GameState.FreeRoam;
         };
     }
 
