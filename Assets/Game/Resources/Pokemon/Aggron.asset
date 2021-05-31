@@ -16,12 +16,13 @@ MonoBehaviour:
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
-  secondType: 0
-  maxHealth: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
+  firstType: 7
+  secondType: 13
+  maxHealth: 85
+  attack: 180
+  defense: 110
+  spAttack: 45
+  spDefense: 85
+  speed: 75
   learnables: []
+  abilities: []

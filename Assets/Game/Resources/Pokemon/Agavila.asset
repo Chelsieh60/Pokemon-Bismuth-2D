@@ -16,8 +16,8 @@ MonoBehaviour:
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
-  secondType: 0
+  firstType: 4
+  secondType: 8
   maxHealth: 0
   attack: 0
   defense: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   spDefense: 0
   speed: 0
   learnables: []
+  abilities: []

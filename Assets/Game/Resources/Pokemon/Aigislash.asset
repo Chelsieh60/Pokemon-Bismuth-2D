@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
   m_Name: Aigislash
   m_EditorClassIdentifier: 
-  names: 
+  names: Aigislashs
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
-  secondType: 0
+  firstType: 17
+  secondType: 7
   maxHealth: 0
   attack: 0
   defense: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
   spDefense: 0
   speed: 0
   learnables: []
+  abilities: []

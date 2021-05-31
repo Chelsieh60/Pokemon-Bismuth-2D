@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99d549289719954784729702f953a80, type: 3}
   m_Name: Aegicoatl
   m_EditorClassIdentifier: 
-  names: 
+  names: Aegicoatl
   description: 
   front: {fileID: 0}
   back: {fileID: 0}
-  firstType: 0
-  secondType: 0
-  maxHealth: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
+  firstType: 16
+  secondType: 17
+  maxHealth: 110
+  attack: 90
+  defense: 105
+  spAttack: 90
+  spDefense: 130
+  speed: 75
   learnables: []
+  abilities: []
